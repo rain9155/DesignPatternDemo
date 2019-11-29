@@ -1,4 +1,4 @@
-package com.example.hy.designpatternDemo.singleton;
+package com.example.hy.designpatternDemo.singleton.container;
 
 import java.lang.reflect.Constructor;
 import java.util.HashMap;

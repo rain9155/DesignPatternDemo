@@ -1,5 +1,7 @@
 package com.example.hy.designpatternDemo.singleton;
 
+import com.example.hy.designpatternDemo.singleton.hungry.CEO;
+
 /**
  * Created by 陈健宇 at 2018/10/1
  */
@@ -9,8 +11,8 @@ public class Client {
         //创建一个公司
         Company company = new Company();
         //创建CEO
-        Staff ceo1 = CEO1.getInstance();
-        Staff ceo2 = CEO1.getInstance();
+        Staff ceo1 = CEO.getInstance();
+        Staff ceo2 = CEO.getInstance();
         //创建员工
         Staff staff1 = new Employee();
         Staff staff2 = new Employee();
