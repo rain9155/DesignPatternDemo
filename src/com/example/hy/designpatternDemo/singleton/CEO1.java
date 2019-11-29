@@ -7,7 +7,7 @@ package com.example.hy.designpatternDemo.singleton;
  * Created by 陈健宇 at 2018/10/1
  */
 public class CEO1 extends Staff {
-    private static final CEO1 mCeo = new CEO1();
+    private static CEO1 mCeo = new CEO1();
     //构造函数私有
     private CEO1(){}
 

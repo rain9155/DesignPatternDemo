@@ -6,6 +6,7 @@ package com.example.hy.designpatternDemo.singleton;
  */
 public enum CEO5{
     INSTANCE;
+    String name = "ceo";
     public void doSomething(){
         System.out.println("do Something");
     }

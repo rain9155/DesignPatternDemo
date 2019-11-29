@@ -1,5 +1,6 @@
 package com.example.hy.designpatternDemo.singleton;
 
+import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,17 +10,17 @@ import java.util.Map;
  */
 public class SingletonManager{
 
-    private static Map<String, Object> objMap = new HashMap<>();
+    private static Map<String, Object> mServices = new HashMap<>();
 
     private SingletonManager(){}
 
-    public static void registerService(String key, SingletonManager instance){
-        if(!objMap.containsKey(key)){
-            objMap.put(key, instance);
+    public static void registerService(String key, Object instance){
+        if(!mServices.containsKey(key)){
+            mServices.put(key, instance);
         }
     }
 
     public static Object getService(String key){
-        return objMap.get(key);
+        return mServices.get(key);
     }
 }

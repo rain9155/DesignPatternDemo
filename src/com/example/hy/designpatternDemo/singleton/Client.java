@@ -3,7 +3,7 @@ package com.example.hy.designpatternDemo.singleton;
 /**
  * Created by 陈健宇 at 2018/10/1
  */
-public class Test {
+public class Client {
 
     public static void main(String[] args){
         //创建一个公司
@@ -23,6 +23,7 @@ public class Test {
         company.addStaff(staff3);
         //show staffs
         company.showStaffs();
+
     }
 
 }

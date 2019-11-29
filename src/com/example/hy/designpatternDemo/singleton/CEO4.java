@@ -19,7 +19,7 @@ public class CEO4 extends Staff {
      * 静态内部类
      */
     private static class SingletonHolder{
-        private static final CEO4 mCeo = new CEO4();
+        private static CEO4 mCeo = new CEO4();
     }
 
 }
