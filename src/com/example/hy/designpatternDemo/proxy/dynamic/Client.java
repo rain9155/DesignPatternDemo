@@ -14,7 +14,7 @@ import java.lang.reflect.Proxy;
  */
 public class Client {
     public static void main(String[] args) {
-        System.getProperties().put("jdk.proxy.ProxyGenerator.saveGeneratedFiles", "true");
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         //构造一个小明
         IRoom xiaoMing = new XiaoMing();
         //构造一个动态代理
